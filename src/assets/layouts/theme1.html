@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub__login__container {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid red;
+            padding: 48px 24px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sub__login__container">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email">
+        </div>
+
+        <div>
+            <label class="margin__top__class" for="password">Password</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+
+        <input class="submit__class" type="submit" value="Log In">
+    </div>
+</body>
+
+</html>

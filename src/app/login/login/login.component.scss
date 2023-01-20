@@ -1,0 +1,33 @@
+.login__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .sub__login__container {
+        border: 5px solid black;
+        padding: 64px 32px;
+        background: #c0c0c070;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    label.margin__top__class {
+        margin-top: 16px;
+    }
+
+    .submit__class {
+        width: 100%;
+        margin-top: 32px;
+        background: silver;
+        height: 36px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="login__container" *ngIf="isDefaultTheme">
+    <div class="sub__login__container">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email">
+        </div>
+
+        <div>
+            <label class="margin__top__class" for="password">Password</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+
+        <input class="submit__class" type="submit" value="Log In">
+    </div>
+</div>
+
+<div class="custom__layout__class" *ngIf="!isDefaultTheme" [innerHTML]="customLayout | safeHtml"></div>
